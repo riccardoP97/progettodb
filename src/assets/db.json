@@ -1,0 +1,16 @@
+{
+    "utenti": [
+      {
+        "id": 0,
+        "nome": "Riccardo",
+        "cognome": "Pennino",
+        "eta": "25"
+      },
+      {
+        "cognome": "Sebastiano",
+        "eta": "20",
+        "nome": "Monica",
+        "id": 1
+      }
+    ]
+  }

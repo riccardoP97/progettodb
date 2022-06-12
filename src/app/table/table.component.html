@@ -1,0 +1,27 @@
+<div class="container">
+	<h2>Lista Utenti</h2>
+	<ul class="responsive-table">
+		<li class="table-header">
+			<div class="col col-1">ID</div>
+			<div class="col col-2">Nome</div>
+			<div class="col col-3">Cognome</div>
+			<div class="col col-4">Età</div>
+			<div class="col col-4">Elimina Utente</div>
+		</li>
+		<li class="table-row" *ngFor="let utente of utenti">
+			<div class="col col-1" >#{{utente.id}}</div>
+			<div class="col col-2" >{{utente.nome}}</div>
+			<div class="col col-3" >{{utente.cognome}}</div>
+			<div class="col col-4" >{{utente.eta}}</div>
+			<div class="col col-4">
+				<button class="noselect"> <span class='text'>Elimina</span><span class="icon"><svg
+							xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+							<path
+								d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z" />
+						</svg></span></button></div>
+		</li>
+	</ul>
+	<div>
+		<button (click)="closeTable()" class="button2">Chiudi tabella</button>
+	</div>
+</div>

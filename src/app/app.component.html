@@ -1,0 +1,10 @@
+<div>
+<h1>{{title}}</h1>
+  <app-side-bar (openTable)="mostra('table')" (openForm)="mostra('form')"></app-side-bar>
+</div>
+<div *ngIf="showTable">
+  <app-table (chiudiTable)="nascondi('table')" [utenti]="utenti"></app-table>
+</div>
+<div *ngIf="showForm">
+<app-form (chiudiForm)="nascondi('form')" ></app-form>
+</div>
